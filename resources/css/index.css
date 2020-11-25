@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+
+
+html {
+    font-size: 16px;
+}
+header {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#colmar-title {
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+#colmar-academy {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: gray;
+    font-size: 1.8rem;
+}
+header {
+    padding: 0 1.5rem;
+}
+#logo {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+}
+#logo img {
+    height: 2rem;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+.spacer {
+    background-color: mediumturquoise;
+    width: 1rem;
+    height: 4rem;
+}
