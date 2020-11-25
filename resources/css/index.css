@@ -1,47 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
 html {
     font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
 }
+
 header {
     height: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 #colmar-title {
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.5rem;
 }
+
 #colmar-academy {
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
-    color: gray;
+    color: rgb(155, 155, 155);
     font-size: 1.5rem;
 }
+
 header {
     padding: 0 1.5rem;
 }
+
 #logo {
     display: flex;
     align-items: center;
 }
+
 #logo img {
     height: 2rem;
 }
+
 #logo div {
     height: 2rem;
 }
+
 nav {
     display: flex;
     align-items: center;
 }
+
 .spacer {
-    background-color: mediumturquoise;
+    background-color: rgb(119, 228, 226);
     width: 1rem;
     height: 4rem;
+}
+
+
+/*Start section Desktop*/
+
+.start-section {
+    display: flex;
+    box-sizing: border-box;
+    background-color: rgb(216, 216, 216);
+    width: 100%;
+    padding: 2rem 1.5rem;
+}
+
+.start-section .image {
+    flex: 1 1 60%;
+    min-width: 40.75rem;
+    margin-right: 2rem;
+}
+
+.start-section img {
+    width: 100%;
+    height: auto;
+}
+
+.start-section .sign-up-container {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 8 40%;
+    min-width: 25.625rem;
+    max-width: 52rem;
+    justify-content: center;
+}
+
+.sign-up-container h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgb(74, 74, 74);
+    margin-bottom: 1.5rem;
+}
+
+.sign-up-container h3 {
+    font-size: 2rem;
+    color: rgb(74, 74, 74);
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.button {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(74, 74, 74);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem 0;
+    width: 75%;
+    align-self: center;
+}
+
+.button:hover {
+    color: rgb(74, 74, 74);
+    background-color: rgb(119, 228, 226);
 }
