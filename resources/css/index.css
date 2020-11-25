@@ -14,14 +14,14 @@ header {
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 #colmar-academy {
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     color: gray;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 header {
     padding: 0 1.5rem;
@@ -29,9 +29,11 @@ header {
 #logo {
     display: flex;
     align-items: center;
-    height: 2rem;
 }
 #logo img {
+    height: 2rem;
+}
+#logo div {
     height: 2rem;
 }
 nav {
