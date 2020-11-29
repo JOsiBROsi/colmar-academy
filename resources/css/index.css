@@ -56,28 +56,27 @@ nav {
 }
 
 
-/*Start section Desktop*/
+/* General structure styling */
 
-.start-section {
-    display: flex;
+.container {
     box-sizing: border-box;
-    background-color: rgb(216, 216, 216);
+    display: flex;
     width: 100%;
+}
+
+.column1 {
+    box-sizing: border-box;
+    flex: 1 1 60%;
+    min-width: 40.75rem;
     padding: 2rem 1.5rem;
 }
 
-.start-section .image {
-    flex: 1 1 60%;
-    min-width: 40.75rem;
-    margin-right: 2rem;
-}
-
-.start-section img {
+.column1 img {
     width: 100%;
     height: auto;
 }
 
-.start-section .sign-up-container {
+.column2 {
     display: flex;
     flex-flow: column nowrap;
     flex: 1 8 40%;
@@ -86,18 +85,17 @@ nav {
     justify-content: center;
 }
 
-.sign-up-container h1 {
-    font-size: 4rem;
+h4 {
+    font-size: 1.75rem;
     font-weight: bold;
-    color: rgb(74, 74, 74);
-    margin-bottom: 1.5rem;
 }
 
-.sign-up-container h3 {
-    font-size: 2rem;
+h1,
+h2,
+h3,
+h4,
+p {
     color: rgb(74, 74, 74);
-    line-height: 2.5rem;
-    margin-bottom: 1.5rem;
 }
 
 .button {
@@ -117,4 +115,111 @@ nav {
 .button:hover {
     color: rgb(74, 74, 74);
     background-color: rgb(119, 228, 226);
+}
+
+
+/*Start section Desktop*/
+
+#start-section {
+    background-color: rgb(216, 216, 216);
+}
+
+.column2 h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Keep  practising*/
+
+#practising-section {
+    color: rgb(243, 245, 245);
+}
+
+#practising-section .column2 {
+    justify-content: flex-start;
+    padding: 1rem 0.5rem 0 0;
+}
+
+.quote-author {
+    margin-top: 1rem;
+}
+
+.column-tile {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    padding: 1rem 1rem;
+}
+
+.information-container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 65%;
+    justify-content: center;
+}
+
+.information-container p {
+    margin: 0.5rem 0;
+    line-height: 1.5rem;
+}
+
+.information-container a {
+    color: rgb(53, 139, 232);
+    text-decoration: none;
+}
+
+.image-container {
+    width: 35%;
+    margin-right: 0.5rem;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Start learning section */
+
+#start-learning {
+    padding: 2rem;
+    background-color: rgb(216, 216, 216);
+}
+
+.course {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgb(255, 255, 255);
+}
+
+.course-image {
+    width: 100%
+}
+
+.course-image img {
+    width: 100%;
+    height: auto;
+}
+
+.course-content {
+    display: block;
+}
+
+.course-title {
+    text-transform: uppercase;
 }
