@@ -197,18 +197,36 @@ h3 {
 /* Start learning section */
 
 #start-learning {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     padding: 2rem;
     background-color: rgb(216, 216, 216);
+}
+
+#start-learning h2 {
+    padding: 0 0;
+}
+
+.courses {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1rem 1.5rem;
+    min-width: 55rem;
+    max-width: 77.5rem;
 }
 
 .course {
     display: flex;
     flex-flow: column nowrap;
     background-color: rgb(255, 255, 255);
+    margin: 1rem 1rem;
+    max-width: 22.5rem;
 }
 
 .course-image {
-    width: 100%
+    max-width: 100%;
 }
 
 .course-image img {
@@ -217,9 +235,14 @@ h3 {
 }
 
 .course-content {
-    display: block;
+    padding: 1rem 1rem 1.5rem 1rem;
 }
 
-.course-title {
+.course-content .course-title {
     text-transform: uppercase;
+    margin: 0.5rem 0;
+}
+
+.course-content p {
+    line-height: 1.3rem;
 }
