@@ -5,6 +5,10 @@ html {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+body {
+    min-width: 70rem;
+}
+
 header {
     height: 4rem;
     display: flex;
@@ -62,16 +66,26 @@ nav {
     box-sizing: border-box;
     display: flex;
     width: 100%;
+    padding: 2rem 1.5rem
+}
+
+.container-row {
+    display: flex;
 }
 
 .column1 {
     box-sizing: border-box;
     flex: 1 1 60%;
     min-width: 40.75rem;
-    padding: 2rem 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .column1 img {
+    width: 100%;
+    height: auto;
+}
+
+.column1 video {
     width: 100%;
     height: auto;
 }
@@ -82,12 +96,7 @@ nav {
     flex: 1 8 40%;
     min-width: 25.625rem;
     max-width: 52rem;
-    justify-content: center;
-}
-
-h4 {
-    font-size: 1.75rem;
-    font-weight: bold;
+    justify-content: flex-start;
 }
 
 h1,
@@ -96,6 +105,33 @@ h3,
 h4,
 p {
     color: rgb(74, 74, 74);
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h4 {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.4rem;
 }
 
 .button {
@@ -124,23 +160,8 @@ p {
     background-color: rgb(216, 216, 216);
 }
 
-.column2 h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-}
-
-h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    padding-top: 2rem;
-    padding-bottom: 1.5rem;
-}
-
-h3 {
-    font-size: 2rem;
-    line-height: 2.5rem;
-    margin-bottom: 1.5rem;
+#start-section .column2 {
+    justify-content: center;
 }
 
 
@@ -148,11 +169,6 @@ h3 {
 
 #practising-section {
     color: rgb(243, 245, 245);
-}
-
-#practising-section .column2 {
-    justify-content: flex-start;
-    padding: 1rem 0.5rem 0 0;
 }
 
 .quote-author {
@@ -163,7 +179,7 @@ h3 {
     box-sizing: border-box;
     display: flex;
     width: 100%;
-    padding: 1rem 1rem;
+    padding: 0 1rem 1rem 1rem;
 }
 
 .information-container {
@@ -175,7 +191,6 @@ h3 {
 
 .information-container p {
     margin: 0.5rem 0;
-    line-height: 1.5rem;
 }
 
 .information-container a {
@@ -197,22 +212,17 @@ h3 {
 /* Start learning section */
 
 #start-learning {
-    display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding: 2rem;
     background-color: rgb(216, 216, 216);
-}
-
-#start-learning h2 {
-    padding: 0 0;
 }
 
 .courses {
     box-sizing: border-box;
     display: flex;
     flex-flow: row wrap;
-    padding: 1rem 1.5rem;
+    justify-content: center;
+    padding: 0 1.5rem 0 1.5rem;
     min-width: 55rem;
     max-width: 77.5rem;
 }
@@ -243,6 +253,26 @@ h3 {
     margin: 0.5rem 0;
 }
 
-.course-content p {
-    line-height: 1.3rem;
+
+/* Thesis exhibit section */
+
+#thesis-exhibit {
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: rgb(243, 245, 245);
+}
+
+#thesis-exhibit h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Footer section */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background-color: rgb(243, 245, 245);
 }
