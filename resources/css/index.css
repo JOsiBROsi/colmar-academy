@@ -9,54 +9,67 @@ body {
     min-width: 70rem;
 }
 
-header {
-    height: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-#colmar-title {
-    font-family: 'Quicksand', sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.5rem;
-}
-
-#colmar-academy {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: rgb(155, 155, 155);
-    font-size: 1.5rem;
-}
+/* Header General */
 
 header {
     padding: 0 1.5rem;
 }
 
-#logo {
-    display: flex;
-    align-items: center;
+
+/* Header Mobile */
+
+@media only screen and (max-width: 480px) {
+    .desktop {
+        display: none;
+    }
 }
 
-#logo img {
-    height: 2rem;
-}
 
-#logo div {
-    height: 2rem;
-}
+/* Header Desktop */
 
-nav {
-    display: flex;
-    align-items: center;
-}
-
-.spacer {
-    background-color: rgb(119, 228, 226);
-    width: 1rem;
-    height: 4rem;
+@media only screen and (min-width: 490px) {
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        justify-content: space-between;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+    }
+    #colmar-title {
+        font-family: 'Quicksand', sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    #colmar-academy {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: rgb(155, 155, 155);
+        font-size: 1.5rem;
+    }
+    #logo {
+        display: flex;
+        align-items: center;
+    }
+    #logo img {
+        height: 2rem;
+    }
+    #logo div {
+        height: 2rem;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+    }
+    .spacer {
+        background-color: rgb(119, 228, 226);
+        width: 1rem;
+        height: 4rem;
+    }
 }
 
 
